@@ -1,0 +1,56 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>CMQ Portail</title>
+        <meta name="description" content="">
+
+		<!-- Setting the right viewport -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <link rel="stylesheet" href="js/vendor/bootstrap/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="js/vendor/bootstrap/dist/css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="js/vendor/fontawesome/css/font-awesome.min.css">
+
+        <link rel="stylesheet" href="css/main.css">
+
+    </head>
+
+    <body>
+
+        <nav class="navbar navbar-default">
+            <div id="app-container" class="container-fluid header-align">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                  <a class="navbar-brand" href="#prv_tmpl"><img src="" alt="logo" /></a>
+                </div>
+
+                <div class="header-region">GogoExotic</div>
+
+            </div>
+        </nav>
+
+        <div class="container">
+            <div class="row">
+
+                <div id="main-region"></div>
+
+            </div> <!-- end main row -->
+
+        </div> <!-- end container -->
+
+        <div id="modal" class="modal"></div>
+
+        <script src="js/apps/auth0/auth0-variables.js"></script>
+        <script src="js/apps/auth0/auth0lock-variables.json"> </script>
+        <script src="js/vendor/auth0-lock/build/lock.min.js"></script>
+        <script src="js/vendor/auth0-lock-passwordless/build/lock-passwordless.min.js"></script>
+        <script data-main="./js/require_main.js" src="./js/vendor/requirejs/require.js"></script>
+
+    </body>
+</html>
