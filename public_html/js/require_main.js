@@ -2,9 +2,9 @@ requirejs.config({
     baseUrl: '/js',
     paths: {
         jquery: 'vendor/jquery/dist/jquery.min',
-        underscore: 'vendor/underscore/underscore',
-        backbone: 'vendor/backbone/backbone',
-        marionette: 'vendor/backbone.marionette/lib/backbone.marionette',
+        underscore: 'vendor/underscore/underscore-min',
+        backbone: 'vendor/backbone/backbone-min',
+        marionette: 'vendor/backbone.marionette/lib/backbone.marionette.min',
         radio: 'vendor/backbone.radio/build/backbone.radio.min',
         bootstrap: 'vendor/bootstrap/dist/js/bootstrap.min',
         spin: 'vendor/spin/javascripts/jquery.spin',
