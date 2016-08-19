@@ -1,5 +1,5 @@
 var auth0options = 	{
-	icon: "https://stripe-images.s3.amazonaws.com/emails/acct_103PX32oBK6FIaEZ/4/circular_icon.png",
+	// icon: "https://stripe-images.s3.amazonaws.com/emails/acct_103PX32oBK6FIaEZ/4/circular_icon.png",
 	closable: false,
 	dict: 'fr',
 	rememberLastLogin: false,

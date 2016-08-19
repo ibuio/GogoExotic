@@ -12,6 +12,7 @@ requirejs.config({
         auth0: 'vendor/auth0-lock/build/lock.min',
         jqueryui: 'vendor/jquery-ui/jquery-ui.min',
         alertify: 'vendor/alertify/alertify.min',
+        polyglot: 'vendor/polyglot/polyglot.min',
         tpl: 'lib/tpl'
     },
 
