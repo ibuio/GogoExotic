@@ -1,0 +1,19 @@
+{
+  "name": "gogo-exotic",
+  "version": "0.0.1",
+  "description": "gogo exotic",
+  "main": "Gruntfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ibuio/GogoExotic.git"
+  },
+  "author": "konan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ibuio/GogoExotic/issues"
+  },
+  "homepage": "https://github.com/ibuio/GogoExotic#readme"
+}
