@@ -1,57 +1,61 @@
 /* global Marionette */
 define([
     'marionette',
-    'auth0'
-], function (Marionette, Auth0) {
+    'auth0',
+    'polyglot'
+], function (Marionette, Auth0, Polyglot) {
     'use strict';
 
     // Our main application
     var app = new Marionette.Application();
     app.environment = 'dev';
     app.userProfile;
+    app.lang = localStorage.getItem('gogolang') === null || localStorage.getItem('gogolang') === undefined 
+        ? (window.navigator.userLanguage || window.navigator.language).substring(0, 2) : localStorage.getItem('gogolang');
+    localStorage.setItem('gogolang', app.lang);
 
     var authOptions = auth0options;
 
     // AUTH AUTH AUTH
-    var lock = new Auth0Lock(
-        // All these properties are set in auth0-variables.json
-        AUTH0_CLIENT_ID,
-        AUTH0_DOMAIN
+    var lock = new Auth0Lock(AUTH0_CLIENT_ID, AUTH0_DOMAIN, {
+            container: 'main-region'
+        }
     );
 
     /* onBeforeStart Event */
     app.on("before:start", function() {
-        require([
-            'backbone'
-        ], function(Backbone) {
-            console.log('app::berfore:start');
+        console.log('app::berfore:start');
 
-            /*if(typeof sessionStorage.getItem('userToken') === 'undefined' || sessionStorage.getItem('userToken') === null) {
-                app.authLogin(lock, authOptions);
+        $.ajax({
+            type: 'GET',
+            url: 'json/apps/i18n/' + app.lang + '.json',
+            dataType: 'json',
+            success: function(data) {
+                // Instantiates polyglot with phrases.
+                window.polyglot = new Polyglot({ phrases: data });
             }
-            else {
-                $.ajaxSetup({
-                    'beforeSend': function(xhr) {
-                        if (sessionStorage.getItem('userToken')) {
-                            xhr.setRequestHeader('Authorization', 'Bearer ' + sessionStorage.getItem('userToken'));
-                        }
-                    },
-                    dataType: "json",
-                    contentType: "application/json",
-                });
-
-                // app.userProfile = JSON.parse(sessionStorage.getItem('usercmqprofile'));
-                // app.environment = window.location.href.indexOf("phoenix.") !== -1 ? "ovhphoenix." : window.location.href.indexOf("dev") !== -1 ? "ovhdev." : window.location.href.indexOf("localhost") !== -1 ? "ovhdev." : "prod";
-            }*/
         });
     });
 
     app.on('start', function() {
         require([
-            'backbone',
-        ], function(Backbone) {
+            'router/AppRouter',
+            'controllers/AppController',
+            'controllers/DataController',
+            'views/AppLayoutView',
+            'views/LoadingView',
+        ], function(AppRouter, AppController, DataController, AppLayoutView, LoadingView) {
             console.log('app::start');
 
+            app.router = new AppRouter({ controller: new AppController() });
+
+            app.dataController = new DataController();
+
+            app.layoutView = new AppLayoutView();
+            app.layoutView.render();
+
+            var loadingView = new LoadingView();
+            app.layoutView.showChildView('main_region', loadingView);
 
             // Backbone history for Routing
             if(Backbone.history)
@@ -69,14 +73,15 @@ define([
                 // Error callback
                 console.log("There was an error");
                 alert("There was an error logging in");
-            } else {
+            }
+            else {
                 // Success calback
                 // Save the JWT token.
                 if(token !== undefined && token !== 'null') {
                     sessionStorage.setItem('userToken', token);
 
                     // Save the profile
-                    // sessionStorage.setItem('usercmqprofile', JSON.stringify(profile));
+                    sessionStorage.setItem('usergogoprofile', JSON.stringify(profile));
                 }
 
                 window.location.reload();
@@ -90,8 +95,6 @@ define([
         sessionStorage.removeItem('userToken');
         app.userProfile = null;
         window.location.reload();
-
-        window.Intercom("shutdown");
     }
 
     return window.app = app;
