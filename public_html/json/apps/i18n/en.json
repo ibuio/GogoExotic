@@ -4,5 +4,7 @@
     "password_placeholder": "Password",
     "login": "Log In",
     "forgot_password": "Forgot your password?",
+    "fb_login": "Log in with Facebook",
+    "gmail_login": "Log in with Gmail",
     "new_account": "Create a new account"
 }

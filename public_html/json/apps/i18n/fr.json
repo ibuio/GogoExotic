@@ -4,5 +4,7 @@
     "password_placeholder": "Mot de Passe",
     "login": "Se Connecter",
     "forgot_password": "Oublié votre mot de passe?",
+    "fb_login": "Se connecter avec Facebook",
+    "gmail_login": "Se connecter avec Gmail",
     "new_account": "Créer un nouveau compte"
 }

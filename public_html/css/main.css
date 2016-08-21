@@ -36,8 +36,17 @@
   display: block;
   text-align: center; }
 
-.form-login {
-  position: relative; }
+.btn-login-fb:active {
+  background-color: #91A6D4; }
+
+.btn-login-fb {
+  background-color: #3B5998; }
+
+.btn-login-gmail {
+  background-color: #DD4B39; }
+
+.btn-login-gmail:active {
+  background-color: #ED9D92; }
 
 .mobile-new-account {
   position: absolute;
