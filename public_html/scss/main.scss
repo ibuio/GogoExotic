@@ -1,0 +1,75 @@
+$font-stack: Palatino;
+$app-color: #BF80FF;
+$app-color-faint: #E6CCFF;
+$ibu-font: Papyrus;
+$ibu-color: #339933;
+
+/** HEADER **/
+.header-region {
+    height: 50px;
+    background-color: $app-color;
+}
+.logo-app {
+    padding: 0.2em;
+    font-family: $font-stack;
+    font-size: 30px;
+    color: white;
+}
+
+/** END HEADER **/
+
+/** BODY **/
+
+.mobile-login-input {
+    margin: 0 auto;
+    float: none;
+    padding-top: 25px;
+}
+.btn-login {
+    height: 35px;
+    border: 1px solid #D2D2E0;
+    border-radius: 4px;
+    text-align: center;
+    background-color: $app-color;
+    color: white;
+    font-size: 16px;
+}
+.btn-login:active {
+    background-color: $app-color-faint;
+}
+.info-login {
+    font-style: normal;
+    vertical-align: sub;
+}
+.forgot-pwd {
+    display: block;
+    text-align: center;
+}
+.form-login {
+    position: relative;
+}
+
+.mobile-new-account {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+}
+
+/** END BODY **/
+
+/** FOOTER **/
+
+.footer-region {
+    height: 50px;
+    background-color: #E0E0EB;
+}
+.logo-cie {
+    padding: 0.5em;
+    font-family: $ibu-font;
+    font-size: 24px;
+    color: $ibu-color;
+}
+
+/** END FOOTER **/

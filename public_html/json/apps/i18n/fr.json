@@ -1,3 +1,8 @@
 {
-    "loading_message": "Veuillez patienter s'il vous plait"
+    "loading_message": "Veuillez patienter s'il vous plait",
+     "email_placeholder": "Courriel",
+    "password_placeholder": "Mot de Passe",
+    "login": "Se Connecter",
+    "forgot_password": "Oublié votre mot de passe?",
+    "new_account": "Créer un nouveau compte"
 }

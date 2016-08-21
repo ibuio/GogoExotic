@@ -1,3 +1,8 @@
 {
-    "loading_message": "Please wait"
+    "loading_message": "Please wait",
+    "email_placeholder": "Email",
+    "password_placeholder": "Password",
+    "login": "Log In",
+    "forgot_password": "Forgot your password?",
+    "new_account": "Create a new account"
 }

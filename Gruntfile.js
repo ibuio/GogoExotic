@@ -11,7 +11,6 @@ module.exports = function (grunt) {
 			default_options: {
 				bsFiles: {
 					src: [
-						"public_html/assets/scss/*.sass",
 						"public_html/*.html",
 						"public_html/js/*.js",
 						"public_html/js/*.js",
@@ -20,6 +19,7 @@ module.exports = function (grunt) {
 						"public_html/js/router/*.js",
 						"public_html/js/views/*.js",
 						"public_html/js/templates/*.tmpl",
+						"public_html/scss/*.scss"
 					]
 				}
 			},
@@ -35,7 +35,7 @@ module.exports = function (grunt) {
 		// Watch task config
 		watch: {
 			sass: {
-				files: "public_html/assets/css/*.sass",
+				files: "public_html/scss/*.scss",
 				tasks: ['sass']
 			}
 		},
@@ -43,16 +43,16 @@ module.exports = function (grunt) {
 		sass: {
 			dev: {
 				files: {
-				// destination                      // source file
-				"public_html/assets/scss/main.css" : "public_html/assets/css/main.sass",
+				// destination                // source file
+				"public_html/css/main.css" : "public_html/scss/main.scss",
 				}
 			}
 		}
     });
 
-	grunt.loadNpmTasks('grunt-browser-sync');
-	grunt.loadNpmTasks('grunt-contrib-sass');
 	grunt.loadNpmTasks('grunt-contrib-watch');
+	grunt.loadNpmTasks('grunt-contrib-sass');
+	grunt.loadNpmTasks('grunt-browser-sync');
 
 	grunt.registerTask('default', ['browserSync', 'watch']);
 };

@@ -1,23 +1,21 @@
 define([
-    'marionette'
-], function (Marionette) {
+    'marionette',
+    'views/AppLayoutView'
+], function (Marionette, AppLayoutView) {
     'use strict';
     return Marionette.Object.extend({
 
-        initialize: function() {
-        },
-
         login: function() {
             require([
-                'views/LoginView'
-            ], function(LoginView) {
+                'views/LoginView',
+                'views/LoadingView',
+                'models/login'
+            ], function(LoginView, LoadingView, Login) {
                 console.log('AppController::login');
 
-                var loginView = new LoginView();
-                // app.layoutView.showChildView('main_region', loginView);
-
+                var loginView = new LoginView({ model: new Login() });
+                app.layoutView.showChildView('main_region', loginView);
             });
         }
-
     });
 });
