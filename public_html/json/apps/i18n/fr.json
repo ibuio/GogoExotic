@@ -6,5 +6,8 @@
     "forgot_password": "Oublié votre mot de passe?",
     "fb_login": "Se connecter avec Facebook",
     "gmail_login": "Se connecter avec Gmail",
-    "new_account": "Créer un nouveau compte"
+    "new_account": "Créer un nouveau compte",
+    "title_choice": "Quel type d'utilisateur êtes-vous?",
+    "striper_choice": "Danseuse",
+    "manager_choice": "Gérant"
 }

@@ -6,5 +6,8 @@
     "forgot_password": "Forgot your password?",
     "fb_login": "Log in with Facebook",
     "gmail_login": "Log in with Gmail",
-    "new_account": "Create a new account"
+    "new_account": "Create a new account",
+    "title_choice": "Which type of user are you?",
+    "striper_choice": "Striper",
+    "manager_choice": "Manager"
 }
