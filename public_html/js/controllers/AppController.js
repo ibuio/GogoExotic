@@ -5,6 +5,17 @@ define([
     'use strict';
     return Marionette.Object.extend({
 
+        home: function() {
+            require([
+                'views/account/HomePageView',
+            ], function(HomePageView) {
+                console.log('AppController::home');
+
+                var homePageView = new HomePageView();
+                app.layoutView.showChildView('main_region', homePageView);
+            });
+        },
+
         login: function() {
             require([
                 'views/account/LoginView',
@@ -14,6 +25,13 @@ define([
 
                 var loginView = new LoginView({ model: new Login() });
                 app.layoutView.showChildView('main_region', loginView);
+            });
+        },
+
+        createAccount: function() {
+            require([
+            ], function() {
+                console.log('AppController::createAccount');
             });
         }
     });

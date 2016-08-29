@@ -7,6 +7,7 @@ define(function (require) {
         loading: require('tpl!templates/loading.tmpl'),
 
         account: {
+            homePage: require('tpl!templates/account/homePage.tmpl'),
             login: require('tpl!templates/account/login.tmpl'),
             userTypeChoice: require('tpl!templates/account/userTypeChoice.tmpl')
         }

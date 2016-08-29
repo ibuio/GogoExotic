@@ -32,7 +32,7 @@ module.exports = function (grunt) {
 				server: {
 					baseDir: "./public_html"
 				},
-				port: 8088
+				port: 10080
 			}
 		},
 

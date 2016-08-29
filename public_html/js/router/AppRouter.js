@@ -6,7 +6,11 @@ define([
 
     return Marionette.AppRouter.extend({
         appRoutes: {
-            '': 'login',
+            '': 'home',
+        
+            'login': 'login',
+
+            'login/create': 'createAccount'
         }
 
     });
