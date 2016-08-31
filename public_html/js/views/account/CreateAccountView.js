@@ -7,7 +7,7 @@ define([
     'use strict';
     return Marionette.ItemView.extend({
 
-        template: templates.account.userTypeChoice,
+        template: templates.account.createAccount,
 
         events: {
             'click #id-btn-striper': function() { this.createNewUser('striper'); },

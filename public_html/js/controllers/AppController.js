@@ -30,8 +30,12 @@ define([
 
         createAccount: function() {
             require([
-            ], function() {
+                'views/account/CreateAccountView'
+            ], function(CreateAccountView) {
                 console.log('AppController::createAccount');
+
+                var createAccountView = new CreateAccountView();
+                app.layoutView.showChildView('main_region', createAccountView);
             });
         }
     });

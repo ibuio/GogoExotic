@@ -9,7 +9,7 @@ define(function (require) {
         account: {
             homePage: require('tpl!templates/account/homePage.tmpl'),
             login: require('tpl!templates/account/login.tmpl'),
-            userTypeChoice: require('tpl!templates/account/userTypeChoice.tmpl')
+            createAccount: require('tpl!templates/account/createAccount.tmpl')
         }
     };
 });

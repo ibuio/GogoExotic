@@ -7,7 +7,15 @@
     "fb_login": "Log in with Facebook",
     "gmail_login": "Log in with Gmail",
     "new_account": "Create a new account",
-    "title_choice": "Which type of user are you?",
-    "striper_choice": "Striper",
-    "manager_choice": "Manager"
+    "title_choice": "Sign up to GogoExotic",
+    "email": "Email",
+    "nickname": "Nickname",
+    "password": "Password",
+    "manager": "Club Manager",
+    "streaper": "Streaper",
+    "phone_number": "Phone Number",
+    "language": "Language",
+    "sexe_woman": "Woman",
+    "sexe_man": "Man",
+    "btn-confirm": "Confirm"
 }

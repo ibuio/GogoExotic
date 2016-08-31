@@ -1,9 +1,8 @@
 define([
     'marionette',
     'radio',
-    'views/account/UserTypeChoiceView',
     'templates'
-], function (Marionette, Radio, UserTypeChoiceView, templates) {
+], function (Marionette, Radio, templates) {
     'use strict';
     return Marionette.LayoutView.extend({
 
@@ -25,17 +24,6 @@ define([
             this.listenTo(this.accountChannel, 'create:account', function() {
                 this.displayUserTypeView();
             });
-        },
-
-        displayUserTypeView: function() {
-            console.log('displayUserTypeView');
-
-            var userTypeChoice = new UserTypeChoiceView();
-            this.showChildView('main_region', userTypeChoice);
-        },
-
-        displayCreateAccountView: function() {
-            console.log('displayCreateAccountView');
         }
 
     });

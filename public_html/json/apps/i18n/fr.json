@@ -7,7 +7,15 @@
     "fb_login": "Se connecter avec Facebook",
     "gmail_login": "Se connecter avec Gmail",
     "new_account": "Créer un nouveau compte",
-    "title_choice": "Quel type d'utilisateur êtes-vous?",
-    "striper_choice": "Danseuse",
-    "manager_choice": "Gérant"
+    "title_choice": "Joignez-vous à GogoExotic",
+    "email": "Courriel",
+    "nickname": "Nom d'utilisateur",
+    "password": "Mot de passe",
+    "manager": "Gérant de club",
+    "streaper": "Danseuse",
+    "phone_number": "Numéro de téléphone",
+    "language": "Langue",
+    "sexe_woman": "Femme",
+    "sexe_man": "Homme",
+    "btn-confirm": "Confirmer"
 }
