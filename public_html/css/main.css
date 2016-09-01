@@ -100,9 +100,9 @@ ul > li {
   display: initial; }
 
 .btn-new-user {
-  position: absolute;
-  bottom: 15px;
-  right: 15px; }
+  position: relative;
+  bottom: -20vw;
+  left: 15vw; }
 
 /** END CREATE ACCOUNT PAGE **/
 /** END BODY **/
