@@ -62,7 +62,42 @@ define([
             });
 
             return deferred.promise();
-        }
+        },
+
+        // Sign-up to Auth0 with username-password
+        createNewUser: function(userData) {
+            var deferred = $.Deferred();
+
+            var self = this;
+            var request = $.ajax({
+                url: 'https://ibuio.auth0.com/dbconnections/signup',
+                type: 'POST',
+                contentType: 'application/x-www-form-urlencoded; charset=UTF-8',
+                data: {
+                    client_id: AUTH0_CLIENT_ID,
+                    email: userData.email,
+                    password:  userData.password,
+                    phone_number: userData.phoneNumber,
+                    connection: 'Username-Password-Authentication',
+                    user_metadata: {
+                        nickname: userData.nickname,
+                        userType: userData.userType,
+                        sexe: userData.sexe,
+                        language: userData.language
+                    }
+                }
+            });
+
+            $.when(request).done(function(data, textStatus, xhr) {
+                // deferred.resolve(true);
+                console.log('reponse de Auth0 au login ' + JSON.stringify(data));
+            });
+            request.fail(function(jqXHR, textStatus) {
+                // deferred.resolve(false);
+            });
+
+            return deferred.promise();
+        },
 
     });
 });

@@ -10,12 +10,24 @@ define([
         template: templates.account.createAccount,
 
         events: {
-            'click #id-btn-striper': function() { this.createNewUser('striper'); },
-            'click #id-btn-manager': function() { this.createNewUser('manager'); }
+            'click #btn-new-user-confirm': 'createNewUser'
         },
 
         createNewUser: function() {
-            Radio.trigger('accountChannel', 'choose:user');
+            var phoneNumber = $('#tel-first').val() + $('#tel-middle').val() + $('#tel-last').val();
+            var userData = {
+                email: $('.user-email').val(),
+                password: $('.user-password').val(),
+                phoneNumber: phoneNumber,
+                nickname: $('.user-nickname').val(),
+                userType: $('input[name="user-type"]:checked').val(),
+                sexe: $('select.select-user-sexe option:selected').val(),
+                language: $('select.select-user-language option:selected').val()
+            };
+
+            console.log('userData ' + JSON.stringify(userData));
+
+            // app.dataController.createNewUser(userData);
         }
 
     });

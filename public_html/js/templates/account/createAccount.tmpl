@@ -20,13 +20,13 @@
                         <div class="row">
                             <div class="col-xs-12 col-md-6 rd-usertype-row">
                                 <div>
-                                    <input type="radio" id="rd-user-manager" name="selector" checked>
+                                    <input type="radio" id="rd-user-manager" name="user-type" value="Manager" checked>
                                     <label for="rd-user-admin"><%= polyglot.t('manager') %></label>
                                     <div class="check"></div>
                                 </div>
                                 <div>
-                                    <input type="radio" id="rd-user-streaper" name="selector">
-                                    <label for="rd-user-readonly"><%= polyglot.t('streaper') %></label>
+                                    <input type="radio" id="rd-user-streaper" name="user-type" value="Stripper">
+                                    <label for="rd-user-readonly"><%= polyglot.t('stripper') %></label>
                                     <div class="check"></div>
                                 </div>
                             </div>
@@ -36,18 +36,18 @@
                             <div class="row">
                                 <div class="col-xs-12 col-md-6 user-phone-number">
                                     <label class="subtitle"><%= polyglot.t('phone_number') %></label>
-                                    <div>(<input id="user-tel-first" name="tel-one" type="tel" size=3 maxlength="3">) <input id="user-tel-middle" name="tel-two" type="tel" size=3 maxlength="3">-<input id="user-tel-last" name="tel-three" type="tel" size=4 maxlength="4">
+                                    <div>(<input id="tel-first" name="tel-one" type="tel" size=3 maxlength="3">) <input id="tel-middle" name="tel-two" type="tel" size=3 maxlength="3">-<input id="tel-last" name="tel-three" type="tel" size=4 maxlength="4">
                                     </div>
                                 </div>
                             </div>
 
                             <div class="row user-bottom-info">
-                                <select class="form-control user-sexe-select" required>
+                                <select class="form-control select-user-sexe" required>
                                     <option selected disabled>Sexe</option>
                                     <option value="F"><%= polyglot.t('sexe_woman') %></option>
                                     <option value="M"><%= polyglot.t('sexe_man') %></option>
                                 </select>
-                                <select class="form-control user-language-select" name="language" required>
+                                <select class="form-control select-user-language" name="language" required>
                                     <option selected disabled><%= polyglot.t('language') %></option>
                                     <option value="fr">FR</option>
                                     <option value="en">EN</option>
