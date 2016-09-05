@@ -8,6 +8,7 @@
     "gmail_login": "Log in with Gmail",
     "new_account": "Create a new account",
     "title_choice": "Sign up to GogoExotic",
+
     "email": "Email",
     "nickname": "Nickname",
     "password": "Password",
@@ -17,5 +18,8 @@
     "language": "Language",
     "sexe_woman": "Woman",
     "sexe_man": "Man",
+    "account_warning_mandatory": "This field is mandatory",
+    "account_warning_phone" : "Please fill in the phone number",
+    "account_warning_phoneformat" : "Please use this phone format: XXX-XXX-XXXX",
     "btn-confirm": "Confirm"
 }

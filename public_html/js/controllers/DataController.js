@@ -41,7 +41,7 @@ define([
             var request = $.ajax({
                 url: 'https://ibuio.auth0.com/authorize',
                 type: 'GET',
-                // contentType: 'application/x-www-form-urlencoded; charset=UTF-8',
+                contentType: 'application/x-www-form-urlencoded; charset=UTF-8',
                 /*headers: {
                     "Authorization": "Basic " + + btoa( + ':' + )
                 },*/
@@ -53,11 +53,11 @@ define([
             });
 
             $.when(request).done(function(data, textStatus, xhr) {
-                console.log('reponse success de Auth0 au login avec gmail ' + JSON.stringify(data));
+                console.log('reponse success de Auth0 au login avec ' + socialNetwork + ' ' + JSON.stringify(data));
                 // deferred.resolve(true);
             });
             request.fail(function(jqXHR, textStatus) {
-                console.log('reponse fail de Auth0 au login avec gmail ' + JSON.stringify(jqXHR));
+                console.log('reponse fail de Auth0 au login avec ' + socialNetwork + ' ' + JSON.stringify(jqXHR));
                 // deferred.resolve(false);
             });
 

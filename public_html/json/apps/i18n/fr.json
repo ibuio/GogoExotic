@@ -1,6 +1,7 @@
 {
     "loading_message": "Veuillez patienter s'il vous plait",
-     "email_placeholder": "Courriel",
+    
+    "email_placeholder": "Courriel",
     "password_placeholder": "Mot de Passe",
     "login": "Se Connecter",
     "forgot_password": "Oublié votre mot de passe?",
@@ -8,6 +9,7 @@
     "gmail_login": "Se connecter avec Gmail",
     "new_account": "Créer un nouveau compte",
     "title_choice": "Joignez-vous à GogoExotic",
+
     "email": "Courriel",
     "nickname": "Nom d'utilisateur",
     "password": "Mot de passe",
@@ -17,5 +19,8 @@
     "language": "Langue",
     "sexe_woman": "Femme",
     "sexe_man": "Homme",
+    "account_warning_mandatory": "Ce champ est obligatoire",
+    "account_warning_phone" : "S'il vous plait rentrer un numéro de téléphone",
+    "account_warning_phoneformat" : "S'il vous plait utiliser ce format: XXX-XXX-XXXX",
     "btn-confirm": "Confirmer"
 }

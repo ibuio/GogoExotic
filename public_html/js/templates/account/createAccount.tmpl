@@ -1,73 +1,66 @@
 <div class="row hidden-md hidden-lg">
-    <form role="form">
+    <h3 class="title-center"><%= polyglot.t('title_choice') %></h3>
 
-        <div class="form-group row">
+    <div class="tab-pane" id="res-create-tmpl">
+        <form role="form" class="form-selecters create-account-form">
 
-            <h3 class="title-center"><%= polyglot.t('title_choice') %></h3>
+            <div class="container-fluid">
+                <div class="row user-top-info">
+                    <div class="col-xs-12 col-md-6">
+                        <input type="email" class="form-control user-email user-top-info" name="email" placeholder="<%= polyglot.t('email') %>" required>
+                        <input type="text" class="form-control user-nickname user-top-info" name="nickname" minLength="3" placeholder="<%= polyglot.t('nickname') %>" required>
+                        <input type="password" class="form-control user-password user-top-info" name="password" minLength="5" placeholder="<%= polyglot.t('password') %>" required>
+                    </div>
+                </div> <!-- 1st row -->
 
-            <div class="tab-pane" id="res-create-tmpl">
-                <form role="form" class="form-selecters create-res-form">
+                <div class="row">
+                    <div class="col-xs-12 col-md-6 rd-usertype-row">
+                        <div>
+                            <input type="radio" id="rd-user-manager" name="user-type" value="Manager" >
+                            <label for="rd-user-admin"><%= polyglot.t('manager') %></label>
+                            <div class="check"></div>
+                        </div>
+                        <div>
+                            <input type="radio" id="rd-user-streaper" name="user-type" value="Stripper" checked>
+                            <label for="rd-user-readonly"><%= polyglot.t('stripper') %></label>
+                            <div class="check"></div>
+                        </div>
+                    </div>
+                </div>
 
-                    <div class="container-fluid">
-                        <div class="row user-top-info">
-                            <div class="col-xs-12 col-md-6">
-                                <input type="email" class="form-control user-email user-top-info" name="email" placeholder="<%= polyglot.t('email') %>" required>
-                                <input type="text" class="form-control user-nickname user-top-info" name="nickname" placeholder="<%= polyglot.t('nickname') %>" required>
-                                <input type="password" class="form-control user-password user-top-info" name="password" placeholder="<%= polyglot.t('password') %>" required>
-                            </div>
-                        </div> <!-- 1st row -->
-
-                        <div class="row">
-                            <div class="col-xs-12 col-md-6 rd-usertype-row">
-                                <div>
-                                    <input type="radio" id="rd-user-manager" name="user-type" value="Manager" checked>
-                                    <label for="rd-user-admin"><%= polyglot.t('manager') %></label>
-                                    <div class="check"></div>
-                                </div>
-                                <div>
-                                    <input type="radio" id="rd-user-streaper" name="user-type" value="Stripper">
-                                    <label for="rd-user-readonly"><%= polyglot.t('stripper') %></label>
-                                    <div class="check"></div>
-                                </div>
+                <div class="personal-info">
+                    <div class="row">
+                        <div class="col-xs-12 col-md-6 user-phone-number">
+                            <label class="subtitle"><%= polyglot.t('phone_number') %></label>
+                            <div>(<input id="tel-first" name="tel-one" type="tel" size=3 maxlength="3">) <input id="tel-middle" name="tel-two" type="tel" size=3 maxlength="3">-<input id="tel-last" name="tel-three" type="tel" size=4 maxlength="4">
                             </div>
                         </div>
+                    </div>
 
-                        <div class="personal-info">
-                            <div class="row">
-                                <div class="col-xs-12 col-md-6 user-phone-number">
-                                    <label class="subtitle"><%= polyglot.t('phone_number') %></label>
-                                    <div>(<input id="tel-first" name="tel-one" type="tel" size=3 maxlength="3">) <input id="tel-middle" name="tel-two" type="tel" size=3 maxlength="3">-<input id="tel-last" name="tel-three" type="tel" size=4 maxlength="4">
-                                    </div>
-                                </div>
+                    <div class="row user-bottom-info">
+                        <select class="form-control select-user-sexe" required>
+                            <!-- <option selected disabled>Sexe</option> -->
+                            <option selected value="F"><%= polyglot.t('sexe_woman') %></option>
+                            <option value="M"><%= polyglot.t('sexe_man') %></option>
+                        </select>
+                        <select class="form-control select-user-language" name="language" required>
+                            <!-- <option selected disabled><%= polyglot.t('language') %></option> -->
+                            <option selected value="fr">FR</option>
+                            <option value="en">EN</option>
+                        </select>
+                    </div> <!-- 3rd row -->
+
+                    <footer>
+                        <div class="row btn-new-user">
+                            <div class="col-xs-12">
+                                <button type="button" class="btn btn-success" id="btn-new-user-confirm"><%= polyglot.t('btn-confirm') %></button>
                             </div>
+                        </div>
+                    </footer>
 
-                            <div class="row user-bottom-info">
-                                <select class="form-control select-user-sexe" required>
-                                    <option selected disabled>Sexe</option>
-                                    <option value="F"><%= polyglot.t('sexe_woman') %></option>
-                                    <option value="M"><%= polyglot.t('sexe_man') %></option>
-                                </select>
-                                <select class="form-control select-user-language" name="language" required>
-                                    <option selected disabled><%= polyglot.t('language') %></option>
-                                    <option value="fr">FR</option>
-                                    <option value="en">EN</option>
-                                </select>
-                            </div> <!-- 3rd row -->
+                </div> <!-- personal-info -->
+            </div> <!-- container fluid -->
 
-                            <footer>
-                                <div class="row btn-new-user">
-                                    <div class="col-xs-12">
-                                        <button type="button" class="btn btn-success" id="btn-new-user-confirm"><%= polyglot.t('btn-confirm') %></button>
-                                    </div>
-                                </div>
-                            </footer>
-
-                        </div> <!-- personal-info -->
-                    </div> <!-- container fluid -->
-
-                </form>
-            </div>
-        </div>
-
-    </form>
+        </form>
+    </div>
 </div>

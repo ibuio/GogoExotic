@@ -11,6 +11,7 @@ requirejs.config({
         moment: 'vendor/moment/min/moment.min',
         auth0: 'vendor/auth0-lock/build/lock.min',
         jqueryui: 'vendor/jquery-ui/jquery-ui.min',
+        jqueryValidation: 'vendor/jquery-validation/dist/jquery.validate.min',
         alertify: 'vendor/alertify/alertify.min',
         polyglot: 'vendor/polyglot/polyglot.min',
         tpl: 'lib/tpl'
