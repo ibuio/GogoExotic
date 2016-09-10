@@ -24,11 +24,11 @@ define([
             });
 
             $.when(request).done(function(data, textStatus, xhr) {
-                // deferred.resolve(true);
                 console.log('reponse de Auth0 au login ' + JSON.stringify(data));
+                deferred.resolve(true);
             });
             request.fail(function(jqXHR, textStatus) {
-                // deferred.resolve(false);
+                deferred.resolve(false);
             });
 
             return deferred.promise();
@@ -89,15 +89,15 @@ define([
             });
 
             $.when(request).done(function(data, textStatus, xhr) {
-                // deferred.resolve(true);
                 console.log('reponse de Auth0 au login ' + JSON.stringify(data));
+                deferred.resolve(true);
             });
             request.fail(function(jqXHR, textStatus) {
-                // deferred.resolve(false);
+                deferred.resolve(false);
             });
 
             return deferred.promise();
-        },
+        }
 
     });
 });

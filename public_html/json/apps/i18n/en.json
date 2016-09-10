@@ -1,5 +1,6 @@
 {
     "loading_message": "Please wait",
+
     "email_placeholder": "Email",
     "password_placeholder": "Password",
     "login": "Log In",
@@ -21,5 +22,8 @@
     "account_warning_mandatory": "This field is mandatory",
     "account_warning_phone" : "Please fill in the phone number",
     "account_warning_phoneformat" : "Please use this phone format: XXX-XXX-XXXX",
-    "btn-confirm": "Confirm"
+    "btn-confirm": "Confirm",
+
+    "upload_photo": "Upload your pictures",
+    "browse_picture": "Click here to upload your pictures"
 }

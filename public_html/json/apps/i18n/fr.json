@@ -22,5 +22,8 @@
     "account_warning_mandatory": "Ce champ est obligatoire",
     "account_warning_phone" : "S'il vous plait rentrer un numéro de téléphone",
     "account_warning_phoneformat" : "S'il vous plait utiliser ce format: XXX-XXX-XXXX",
-    "btn-confirm": "Confirmer"
+    "btn-confirm": "Confirmer",
+
+    "upload_photo": "Uploadez vos photos",
+    "browse_picture": "Cliquez ici pour uploader vos photos"
 }

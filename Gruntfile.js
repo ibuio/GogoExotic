@@ -19,8 +19,10 @@ module.exports = function (grunt) {
 						"public_html/js/router/*.js",
 						"public_html/js/views/*.js",
 						"public_html/js/views/account/*.js",
+						"public_html/js/views/profile/*.js",
 						"public_html/js/templates/*.tmpl",
 						"public_html/js/templates/account/*.tmpl",
+						"public_html/js/templates/profile/*.tmpl",
 						"public_html/scss/*.scss",
 						"public_html/json/apps/i18n/en.json",
 						"public_html/json/apps/i18n/fr.json"

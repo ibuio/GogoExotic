@@ -37,6 +37,15 @@ define([
                 var createAccountView = new CreateAccountView();
                 app.layoutView.showChildView('main_region', createAccountView);
             });
+        },
+
+        profilePhoto: function() {
+            require([
+                'views/profile/PhotoPageView'
+            ], function(PhotoPageView) {
+                var photoPageView = new PhotoPageView();
+                app.layoutView.showChildView('main_region', photoPageView);
+            });
         }
     });
 });

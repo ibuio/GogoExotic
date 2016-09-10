@@ -64,14 +64,12 @@ ul > li {
 #id-btn-login-gmail:active {
     background-color: #ED9D92;
 }
-
 .home-bottom-row {
     position: absolute;
     bottom: -1em;
     margin-left: 50px;
     width: 100%;
 }
-
 .btn-login {
     height: 35px;
     border: 1px solid #D2D2E0;
@@ -128,8 +126,27 @@ ul > li {
     left: 15vw;
 }
 
-
 /** END CREATE ACCOUNT PAGE **/
+
+/** PICTURE PAGE **/
+.upload-title {
+    margin: 15px;
+    font-size: 18px;
+    font-weight: normal;
+    letter-spacing: 0.3px;
+}
+.container-upload-pic {
+    margin-top: 20%;
+}
+.input-upload-pic {
+    float: left;
+    border-bottom: solid 1px #E4DBDB;
+}
+.btn-upload-pic {
+    float: right;
+}
+
+/** END PICTURE PAGE **/
 
 
 /** END BODY **/

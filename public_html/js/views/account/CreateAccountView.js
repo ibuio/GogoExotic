@@ -61,7 +61,11 @@ define([
                     language: $('select.select-user-language option:selected').val()
                 };
 
-                app.dataController.createNewUser(userData);
+                $.when(app.dataController.createNewUser(userData)).then(function(response) {
+                    // Redirecting to the upload pictures page only if the new user is a stripper
+                    if(response && userData.userType === 'Stripper')
+                        Backbone.history.navigate('profile/photo', {trigger: true});
+                });
             }
         }
 

@@ -10,7 +10,9 @@ define([
         
             'login': 'login',
 
-            'login/create': 'createAccount'
+            'login/create': 'createAccount',
+
+            'profile/photo': 'profilePhoto'
         }
 
     });
