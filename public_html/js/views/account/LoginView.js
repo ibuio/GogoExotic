@@ -22,15 +22,14 @@ define([
         loginWithGogoCred: function() {
             var username = $('.user-email').val();
             var password = $('.user-password').val();
-            app.dataController.loginWithGogoCred(username, password);
+            $.when(app.dataController.loginWithGogoCred(username, password)).then(function(response) {
+                if(response)
+                    Backbone.history.navigate('profile/photo', {trigger: true});
+            });
         },
 
         loginWithSocial: function(socialNetwork) {
             app.dataController.loginWithSocial(socialNetwork);
-        },
-
-        createNewAccount: function() {
-            Radio.trigger('accountChannel', 'create:account');
         }
 
     });

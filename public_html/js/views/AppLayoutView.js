@@ -15,15 +15,6 @@ define([
         },
 
         events: {
-        },
-
-        initialize: function() {
-            this.accountChannel = Radio.channel('accountChannel');
-
-            // Message received from the LoginView when creating a new account
-            this.listenTo(this.accountChannel, 'create:account', function() {
-                this.displayUserTypeView();
-            });
         }
 
     });
