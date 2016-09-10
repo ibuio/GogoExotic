@@ -7,6 +7,7 @@ requirejs.config({
         marionette: 'vendor/backbone.marionette/lib/backbone.marionette.min',
         radio: 'vendor/backbone.radio/build/backbone.radio.min',
         bootstrap: 'vendor/bootstrap/dist/js/bootstrap.min',
+        bootstrapmaterialize: 'vendor/bootstrap-materialize/js/material.min',
         spin: 'vendor/spin/javascripts/jquery.spin',
         moment: 'vendor/moment/min/moment.min',
         auth0: 'vendor/auth0-lock/build/lock.min',
