@@ -13,7 +13,8 @@ define(function (require) {
         },
 
         profile: {
-            photoPage: require('tpl!templates/profile/photoPage.tmpl')
+            photoPage: require('tpl!templates/profile/photoPage.tmpl'),
+            clubPage: require('tpl!templates/profile/clubPage.tmpl')
         }
     };
 });

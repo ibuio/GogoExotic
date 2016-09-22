@@ -1,9 +1,9 @@
 <div>
-    <div class="upload-title"><%= polyglot.t('upload_photo') %></div>
+    <h3 class="title-center"><%= polyglot.t('upload_photo') %></h3>
 
-    <div class="container container-upload-pic">
-        <form>
-            <!-- <div class="form-group show-default-input"> -->
+    <form role="form" class="form-selecters">
+        <div class="container-fluid container-upload-pic">
+            <div class="row photo-page-row">
                 <input type="file" class="input-upload-pic" name="pic" accept="image/*" multiple>
                 <!-- <input type="file" class="hidden input-upload-pic" name="pic" accept="image/*" multiple> -->
                 <!-- <label for="files">Select file</label> -->
@@ -13,10 +13,16 @@
                     </button>
                 </span> -->
             <!-- </div> -->
-        </form>
-    </div>
 
-    <div>
-        <button type="button" class="btn btn-primary" id="btn-save-to-ospry"><%= polyglot.t('btn-confirm') %></button>
-    </div>
+            </div>
+        </div>
+    </form>
+
+    <footer>
+        <div class="row btn-new-user">
+            <div class="col-xs-12">
+                <button type="button" class="btn btn-success" id="btn-save-to-ospry"><%= polyglot.t('btn-confirm') %></button>
+            </div>
+        </div>
+    </footer>
 </div>

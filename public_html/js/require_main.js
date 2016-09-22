@@ -15,6 +15,7 @@ requirejs.config({
         jqueryValidation: 'vendor/jquery-validation/dist/jquery.validate.min',
         alertify: 'vendor/alertify/alertify.min',
         polyglot: 'vendor/polyglot/polyglot.min',
+        geocomplete: 'lib/jquery.geocomplete',
         tpl: 'lib/tpl'
     },
 

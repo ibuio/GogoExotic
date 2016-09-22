@@ -65,6 +65,8 @@ define([
                     // Redirecting to the upload pictures page only if the new user is a stripper
                     if(response && userData.userType === 'Stripper')
                         Backbone.history.navigate('profile/photo', {trigger: true});
+                    else if(response && userData.userType === 'Manager')
+                        Backbone.history.navigate('profile/club', {trigger: true});
                 });
             }
         }

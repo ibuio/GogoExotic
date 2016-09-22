@@ -46,6 +46,15 @@ define([
                 var photoPageView = new PhotoPageView();
                 app.layoutView.showChildView('main_region', photoPageView);
             });
+        },
+
+        profileClub: function() {
+            require([
+                'views/profile/ClubPageView'
+            ], function(ClubPageView) {
+                var clubPageView = new ClubPageView();
+                app.layoutView.showChildView('main_region', clubPageView);
+            });  
         }
     });
 });

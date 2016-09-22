@@ -1,0 +1,33 @@
+<div class="row hidden-md hidden-lg">
+    <h3 class="title-center"><%= polyglot.t('club_page') %></h3>
+
+    <div class="tab-pane" id="res-create-tmpl">
+        <form role="form" class="form-selecters create-account-form">
+
+            <div class="container-fluid">
+                <div class="row club-top-info">
+                    <div class="col-xs-12 col-md-6">
+                        <input type="text" class="form-control club-name club-top-info" name="name" placeholder="<%= polyglot.t('club_name') %>" required>
+                    </div>
+                </div>
+
+                <form>
+                    <div class="row input-club-addr">
+                        <div class="col-xs-12 col-md-6">
+                            <label><%= polyglot.t('club_label_addr') %></label>
+                            <input id="club-address" type="text" placeholder="<%= polyglot.t('club_label_placeholder') %>" size="90" />
+                        </div>
+                    </div>
+                </form>
+
+                <div class="row btn-new-user">
+                    <div class="col-xs-12">
+                        <button type="button" class="btn btn-success" id="btn-new-club-confirm"><%= polyglot.t('btn-confirm') %></button>
+                    </div>
+                </div>
+
+            </div> <!-- container fluid -->
+
+        </form>
+    </div>
+</div>

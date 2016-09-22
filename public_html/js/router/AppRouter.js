@@ -12,7 +12,9 @@ define([
 
             'login/create': 'createAccount',
 
-            'profile/photo': 'profilePhoto'
+            'profile/photo': 'profilePhoto',
+
+            'profile/club': 'profileClub'
         }
 
     });

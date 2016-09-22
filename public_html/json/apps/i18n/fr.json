@@ -9,6 +9,7 @@
     "gmail_login": "Se connecter avec Gmail",
     "new_account": "Créer un nouveau compte",
     "title_choice": "Joignez-vous à GogoExotic",
+    "club_page": "Entrez les informations de votre club",
 
     "email": "Courriel",
     "nickname": "Nom d'utilisateur",
@@ -25,5 +26,9 @@
     "btn-confirm": "Confirmer",
 
     "upload_photo": "Uploadez vos photos",
-    "browse_picture": "Cliquez ici pour uploader vos photos"
+    "browse_picture": "Cliquez ici pour uploader vos photos",
+
+    "club_name": "Nom du club",
+    "club_label_addr": "Entrez votre adresse ici",
+    "club_label_placeholder": "Taper l'adresse"
 }
