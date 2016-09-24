@@ -95,16 +95,17 @@ ul > li {
 .user-phone-number {
   margin: 25px 0 25px 18vw; }
 
-.user-bottom-info > select:nth-child(1) {
-  margin-bottom: 20px;
-  margin-left: 20%;
-  width: 25%;
-  display: initial; }
+.user-bottom-info {
+  vertical-align: top; }
 
-.user-bottom-info select:nth-child(2) {
-  margin-left: 8%;
-  width: 28%;
-  display: initial; }
+.user-bottom-info > div:nth-of-type(1) {
+  float: left;
+  width: 30%;
+  margin: 0 3vw 0 21vw; }
+
+.user-bottom-info > div:nth-of-type(2) {
+  float: left;
+  width: 30%; }
 
 .btn-new-user {
   position: relative;

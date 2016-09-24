@@ -38,16 +38,21 @@
                     </div>
 
                     <div class="row user-bottom-info">
-                        <select class="form-control select-user-sexe" required>
-                            <option selected disabled>Sexe</option>
-                            <option value="F"><%= polyglot.t('sexe_woman') %></option>
-                            <option value="M"><%= polyglot.t('sexe_man') %></option>
-                        </select>
-                        <select class="form-control select-user-language" name="language" required>
-                            <option selected disabled><%= polyglot.t('language') %></option>
-                            <option value="fr">FR</option>
-                            <option value="en">EN</option>
-                        </select>
+                        <div class="div-float-left">
+                            <label selected disabled>Sexe</label>
+                            <select class="form-control select-user-sexe" required>
+                                <option value="F" selected><%= polyglot.t('sexe_woman') %></option>
+                                <option value="M"><%= polyglot.t('sexe_man') %></option>
+                            </select>
+                        </div>
+                        
+                        <div class="div-float-left">
+                            <label selected disabled><%= polyglot.t('language') %></label>
+                            <select class="form-control select-user-language" name="language" required>
+                                <option value="fr" selected>FR</option>
+                                <option value="en">EN</option>
+                            </select>
+                        </div>
                     </div> <!-- 3rd row -->
 
                     <div class="row btn-new-user">
