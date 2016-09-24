@@ -9,6 +9,8 @@ define([
             '': 'home',
         
             'login': 'login',
+            
+            'login/forgot': 'forgotPassword',
 
             'login/create': 'createAccount',
 

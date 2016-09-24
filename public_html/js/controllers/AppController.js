@@ -28,6 +28,17 @@ define([
             });
         },
 
+        forgotPassword: function() {
+          require([
+                'views/account/ForgotPasswordView'
+            ], function(ForgotPasswordView) {
+                console.log('AppController::forgotPassword');
+
+                var forgotPasswordView = new ForgotPasswordView();
+                app.layoutView.showChildView('main_region', forgotPasswordView);
+            });
+        },
+
         createAccount: function() {
             require([
                 'views/account/CreateAccountView'

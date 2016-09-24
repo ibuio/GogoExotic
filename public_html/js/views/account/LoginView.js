@@ -1,10 +1,9 @@
 /*global define */
 define([
     'marionette',
-    'radio',
     'models/account/login',
     'templates'
-], function (Marionette, Radio, Login, templates) {
+], function (Marionette, Login, templates) {
     'use strict';
     return Marionette.ItemView.extend({
 
@@ -23,6 +22,8 @@ define([
             var username = $('.user-email').val();
             var password = $('.user-password').val();
             $.when(app.dataController.loginWithGogoCred(username, password)).then(function(response) {
+                //TODO: setté le Login Model avec ce que retourne Auth0
+                //this.model.userType...
                 if(response)
                     Backbone.history.navigate('profile/photo', {trigger: true});
             });

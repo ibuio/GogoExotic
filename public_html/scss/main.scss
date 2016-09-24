@@ -92,7 +92,7 @@ ul > li {
     text-align: center;
 }
 .user-top-info,
-.club-top-info {
+.page-top-info {
     margin-bottom: 20px;
     margin-left: 15%;
     width: 70%;
@@ -126,7 +126,7 @@ ul > li {
 .btn-new-user {
     position: relative;
     bottom: -15vw;
-    left: 70vw;
+    left: 65vw;
 }
 
 /** END CREATE ACCOUNT PAGE **/
@@ -149,16 +149,23 @@ ul > li {
 
 /** END PICTURE PAGE **/
 
-/** CLUB PAGE **/
+/** CLUB and FORGOT-PWD PAGE **/
 
-.club-top-info div input,
-.input-club-addr {
+.page-top-info div label {
+    margin-left: 6vw;
+}
+.page-top-info div input {
+    width: 85%;
     margin: 0 0 12vw 6vw;
 }
-.input-club-addr div input {
-    margin: 2vw 0 0 -3px;
+
+.forgot-pwd-info {
+    margin-bottom: 10vw;
+    text-align: center;
+    font-size: 18px;
 }
-/** END CLUB PAGE **/
+
+/** END CLUB and FORGOT-PWD PAGE **/
 
 /** END BODY **/
 

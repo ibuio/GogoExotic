@@ -1,10 +1,9 @@
 /*global define */
 define([
     'marionette',
-    'radio',
     'jqueryValidation',
     'templates'
-], function (Marionette, Radio, JqueryValidation, templates) {
+], function (Marionette, JqueryValidation, templates) {
     'use strict';
     return Marionette.ItemView.extend({
 
@@ -15,8 +14,6 @@ define([
         },
 
         onRender: function() {
-            console.log('onRender');
-
             $('.create-account-form').validate({
                 // Passing the object with custom rules
                 rules : { 

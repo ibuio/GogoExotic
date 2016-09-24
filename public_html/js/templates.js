@@ -9,7 +9,8 @@ define(function (require) {
         account: {
             homePage: require('tpl!templates/account/homePage.tmpl'),
             login: require('tpl!templates/account/login.tmpl'),
-            createAccount: require('tpl!templates/account/createAccount.tmpl')
+            createAccount: require('tpl!templates/account/createAccount.tmpl'),
+            forgotPassword: require('tpl!templates/account/forgotPassword.tmpl')
         },
 
         profile: {
