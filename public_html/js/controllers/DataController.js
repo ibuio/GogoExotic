@@ -97,6 +97,34 @@ define([
             });
 
             return deferred.promise();
+        },
+
+        // When the user enters his email after clicking on the Forgot your password link
+        resetPassword: function(email) {
+            var deferred = $.Deferred();
+
+            var self = this;
+            var request = $.ajax({
+                url: 'https://ibuio.auth0.com/dbconnections/change_password',
+                type: 'POST',
+                // contentType: 'application/json',
+                contentType: 'application/x-www-form-urlencoded; charset=UTF-8',
+                data: {
+                    client_id: AUTH0_CLIENT_ID,
+                    email: email,
+                    connection: 'Username-Password-Authentication'
+                }
+            });
+
+            $.when(request).done(function(data, textStatus, xhr) {
+                console.log('reponse de Auth0 au reset du password ' + JSON.stringify(data));
+                deferred.resolve(true);
+            });
+            request.fail(function(jqXHR, textStatus) {
+                deferred.resolve(false);
+            });
+
+            return deferred.promise();
         }
 
     });

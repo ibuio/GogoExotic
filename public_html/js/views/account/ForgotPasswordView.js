@@ -9,9 +9,13 @@ define([
 
         template: templates.account.forgotPassword,
 
+        events: {
+            'click #btn-forgot-pwd-confirm': 'resetPassword'
+        },
+
         onShow: function() {
             $('.forgot-password-form').validate({
-                 // Setting error messages for the fields
+                // Setting error messages for the fields
                 messages: {
                     email: polyglot.t('account_warning_mandatory')
                 },
@@ -25,6 +29,20 @@ define([
                 },
                 ignore: ".ignore"
             });
+        },
+
+        resetPassword: function(e) {
+            e.preventDefault();
+            e.stopPropagation();
+
+            if($('.forgot-password-form').valid()) {
+                var email = $('.page-top-info div input').val();
+
+                $.when(app.dataController.resetPassword(email)).then(function() {
+                    if(response)
+                        Backbone.history.navigate('login', {trigger: true});
+                });
+            }
         }
 
     });
