@@ -1,8 +1,8 @@
 $font-stack: Palatino;
-$app-color: #BF80FF;
+$app-color: #db5799;
 $app-color-faint: #E6CCFF;
 $ibu-font: Papyrus;
-$ibu-color: #339933;
+$ibu-color: white;
 
 /** HEADER **/
 .header-region {
@@ -13,7 +13,7 @@ $ibu-color: #339933;
     padding: 0.2em;
     font-family: $font-stack;
     font-size: 30px;
-    color: white;
+    color: $ibu-color;
 }
 
 /** END HEADER **/
@@ -31,6 +31,10 @@ ul > li {
 }
 .error {
     color: red;
+}
+
+.btn-color-name {
+    color: $ibu-color;
 }
 /** End Common **/
 
@@ -50,7 +54,9 @@ ul > li {
 }
 .forgot-pwd {
     display: block;
+    padding-bottom: 20px;
     text-align: center;
+    font-size: 16px;
 }
 #id-btn-login-fb:active {
     background-color: #91A6D4;
@@ -78,10 +84,12 @@ ul > li {
     background-color: $app-color;
     color: white;
     font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0.6px;
 }
-#id-btn-login,
+#btn-login-home,
 #id-btn-create-account {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 /** END LOGIN PAGE **/
@@ -100,12 +108,12 @@ ul > li {
 }
 .rd-usertype-row > div:nth-child(1) {
     float: left;
-    margin-left: 18vw;
-    margin-right: 10px;
+    margin-left: 10vw;
 }
-.rd-usertype-row > div:nth-child(2) {
+.rd-usertype-row > div:nth-child(2),
+.rd-usertype-row > div:nth-child(3) {
     float: left;
-    margin-left: 6vw;
+    margin-left: 4vw;
 }
 .user-phone-number {
     margin: 25px 0 25px 18vw;

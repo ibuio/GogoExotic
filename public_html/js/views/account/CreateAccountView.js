@@ -64,6 +64,8 @@ define([
                         Backbone.history.navigate('profile/photo', {trigger: true});
                     else if(response && userData.userType === 'Manager')
                         Backbone.history.navigate('profile/club', {trigger: true});
+                    else if(response && userData.userType === 'Agency')
+                        Backbone.history.navigate('profile/agency', {trigger: true});
                 });
             }
         }

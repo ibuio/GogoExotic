@@ -1,7 +1,6 @@
 {
     "loading_message": "Please wait",
 
-    "club_page": "Enter your club's information",
     "fb_login": "Log in with Facebook",
     "forgot_password": "Forgot your password?",
     "gmail_login": "Log in with Gmail",
@@ -13,6 +12,7 @@
     "account_warning_mandatory": "This field is mandatory",
     "account_warning_phone" : "Please fill in the phone number",
     "account_warning_phoneformat" : "Please use this phone format: XXX-XXX-XXXX",
+    "agency": "Agency",
     "btn-confirm": "Confirm",
     "email": "Email",
     "language": "Language",
@@ -27,7 +27,14 @@
     "browse_picture": "Click here to upload your pictures",
     "upload_photo": "Upload your pictures",
 
+    "club_page": "Enter your club's information",
     "club_name": "Name of the club",
-    "club_label_addr": "Your address",
-    "club_label_placeholder": "Type in an address"
+    "club_label_addr": "Address of the club",
+
+    "agency_page": "Enter your agency's information",
+    "agency_name": "Name of the agency",
+    "agency_label_addr": "Address of the agency",
+
+    "general_addr_label_placeholder": "Enter the address"
+
 }

@@ -1,7 +1,7 @@
 /** HEADER **/
 .header-region {
   height: 50px;
-  background-color: #BF80FF; }
+  background-color: #db5799; }
 
 .logo-app {
   padding: 0.2em;
@@ -21,6 +21,9 @@ ul > li {
 .error {
   color: red; }
 
+.btn-color-name {
+  color: white; }
+
 /** End Common **/
 /** LOGIN PAGE **/
 .mobile-login-input {
@@ -37,7 +40,9 @@ ul > li {
 
 .forgot-pwd {
   display: block;
-  text-align: center; }
+  padding-bottom: 20px;
+  text-align: center;
+  font-size: 16px; }
 
 #id-btn-login-fb:active {
   background-color: #91A6D4; }
@@ -62,13 +67,15 @@ ul > li {
   border: 1px solid #D2D2E0;
   border-radius: 4px;
   text-align: center;
-  background-color: #BF80FF;
+  background-color: #db5799;
   color: white;
-  font-size: 16px; }
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0.6px; }
 
-#id-btn-login,
+#btn-login-home,
 #id-btn-create-account {
-  margin-bottom: 20px; }
+  margin-bottom: 30px; }
 
 /** END LOGIN PAGE **/
 /** CREATE ACCOUNT PAGE **/
@@ -85,12 +92,12 @@ ul > li {
 
 .rd-usertype-row > div:nth-child(1) {
   float: left;
-  margin-left: 18vw;
-  margin-right: 10px; }
+  margin-left: 10vw; }
 
-.rd-usertype-row > div:nth-child(2) {
+.rd-usertype-row > div:nth-child(2),
+.rd-usertype-row > div:nth-child(3) {
   float: left;
-  margin-left: 6vw; }
+  margin-left: 4vw; }
 
 .user-phone-number {
   margin: 25px 0 25px 18vw; }
@@ -153,7 +160,7 @@ ul > li {
   padding: 0.5em;
   font-family: Papyrus;
   font-size: 24px;
-  color: #339933; }
+  color: white; }
 
 /** END FOOTER **/
 

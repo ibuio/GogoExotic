@@ -10,13 +10,15 @@ define([
         
             'login': 'login',
             
-            'login/forgot': 'forgotPassword',
-
             'login/create': 'createAccount',
 
-            'profile/photo': 'profilePhoto',
+            'login/forgot': 'forgotPassword',
 
-            'profile/club': 'profileClub'
+            'profile/agency': 'profileAgency',
+
+            'profile/club': 'profileClub',
+
+            'profile/photo': 'profilePhoto'
         }
 
     });

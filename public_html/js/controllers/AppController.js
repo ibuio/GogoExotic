@@ -28,17 +28,6 @@ define([
             });
         },
 
-        forgotPassword: function() {
-          require([
-                'views/account/ForgotPasswordView'
-            ], function(ForgotPasswordView) {
-                console.log('AppController::forgotPassword');
-
-                var forgotPasswordView = new ForgotPasswordView();
-                app.layoutView.showChildView('main_region', forgotPasswordView);
-            });
-        },
-
         createAccount: function() {
             require([
                 'views/account/CreateAccountView'
@@ -50,12 +39,23 @@ define([
             });
         },
 
-        profilePhoto: function() {
+        forgotPassword: function() {
+          require([
+                'views/account/ForgotPasswordView'
+            ], function(ForgotPasswordView) {
+                console.log('AppController::forgotPassword');
+
+                var forgotPasswordView = new ForgotPasswordView();
+                app.layoutView.showChildView('main_region', forgotPasswordView);
+            });
+        },
+
+        profileAgency: function() {
             require([
-                'views/profile/PhotoPageView'
-            ], function(PhotoPageView) {
-                var photoPageView = new PhotoPageView();
-                app.layoutView.showChildView('main_region', photoPageView);
+                'views/profile/AgencyPageView'
+            ], function(AgencyPageView) {
+                var agencyPageView = new AgencyPageView();
+                app.layoutView.showChildView('main_region', agencyPageView);
             });
         },
 
@@ -66,6 +66,16 @@ define([
                 var clubPageView = new ClubPageView();
                 app.layoutView.showChildView('main_region', clubPageView);
             });  
+        },
+
+        profilePhoto: function() {
+            require([
+                'views/profile/PhotoPageView'
+            ], function(PhotoPageView) {
+                var photoPageView = new PhotoPageView();
+                app.layoutView.showChildView('main_region', photoPageView);
+            });
         }
+
     });
 });

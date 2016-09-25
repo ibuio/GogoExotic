@@ -9,7 +9,7 @@ define([
         template: templates.account.homePage,
 
         events: {
-            'click #id-btn-login': 'login',
+            'click #btn-login-home': 'login',
             'click #id-btn-create-account': 'createNewAccount'
         },
 

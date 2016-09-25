@@ -16,13 +16,18 @@
                 <div class="row">
                     <div class="col-xs-12 col-md-6 rd-usertype-row">
                         <div>
-                            <input type="radio" id="rd-user-manager" name="user-type" value="Manager" >
-                            <label for="rd-user-admin"><%= polyglot.t('manager') %></label>
+                            <input type="radio" id="rd-user-streaper" name="user-type" value="Stripper" checked/>
+                            <label for="rd-user-readonly"><%= polyglot.t('stripper') %></label>
                             <div class="check"></div>
                         </div>
                         <div>
-                            <input type="radio" id="rd-user-streaper" name="user-type" value="Stripper" checked>
-                            <label for="rd-user-readonly"><%= polyglot.t('stripper') %></label>
+                            <input type="radio" id="rd-user-agency" name="user-type" value="Agency"/>
+                            <label for="rd-user-readonly"><%= polyglot.t('agency') %></label>
+                            <div class="check"></div>
+                        </div>
+                        <div>
+                            <input type="radio" id="rd-user-manager" name="user-type" value="Manager"/>
+                            <label for="rd-user-admin"><%= polyglot.t('manager') %></label>
                             <div class="check"></div>
                         </div>
                     </div>
