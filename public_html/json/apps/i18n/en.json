@@ -1,13 +1,14 @@
 {
     "loading_message": "Please wait",
 
+    "title_login": "Login to GogoExotic",
     "fb_login": "Log in with Facebook",
     "forgot_password": "Forgot your password?",
     "gmail_login": "Log in with Gmail",
     "login": "Log In",
     "new_account": "Create a new account",
     "password_placeholder": "Password",
-    "title_choice": "Sign up to GogoExotic",
+    "title_signup": "Sign up to GogoExotic",
 
     "account_warning_mandatory": "This field is mandatory",
     "account_warning_phone" : "Please fill in the phone number",

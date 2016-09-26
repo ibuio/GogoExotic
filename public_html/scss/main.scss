@@ -45,9 +45,6 @@ ul > li {
     float: none;
     padding-top: 25px;
 }
-.btn-login:active {
-    background-color: $app-color-faint;
-}
 .info-login {
     font-style: normal;
     vertical-align: sub;
@@ -58,17 +55,40 @@ ul > li {
     text-align: center;
     font-size: 16px;
 }
-#id-btn-login-fb:active {
-    background-color: #91A6D4;
+
+.btn-login {
+    height: 35px;
+    border: 1px solid #D2D2E0;
+    border-radius: 4px;
+    text-align: center;
+    background-color: $app-color;
+    color: black;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0.6px;
 }
-#id-btn-login-fb {
+.btn-login:active {
+    background-color: $app-color-faint;
+}
+#btn-login-home,
+#id-btn-create-account {
+    margin-bottom: 30px;
+}
+#btn-login-fb,
+#btn-login-gmail {
+    background-color: #D1D1E0;
+}
+#btn-login-fb > i:nth-child(1) {
+    color: #3B5998;
+}
+#btn-login-gmail > i:nth-child(1) {
+    color: #DD4B39;
+}
+#btn-login-fb:active {
     background-color: #3B5998;
 }
-#id-btn-login-gmail {
+#btn-login-gmail:active {
     background-color: #DD4B39;
-}
-#id-btn-login-gmail:active {
-    background-color: #ED9D92;
 }
 .home-bottom-row {
     position: absolute;
@@ -76,27 +96,11 @@ ul > li {
     margin-left: 50px;
     width: 100%;
 }
-.btn-login {
-    height: 35px;
-    border: 1px solid #D2D2E0;
-    border-radius: 4px;
-    text-align: center;
-    background-color: $app-color;
-    color: white;
-    font-size: 16px;
-    font-weight: 500;
-    letter-spacing: 0.6px;
-}
-#btn-login-home,
-#id-btn-create-account {
-    margin-bottom: 30px;
-}
-
 /** END LOGIN PAGE **/
 
 /** CREATE ACCOUNT PAGE **/
 .title-center {
-    margin-bottom: 30px;
+    // margin-bottom: 30px;
     text-align: center;
 }
 .user-top-info,

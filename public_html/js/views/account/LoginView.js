@@ -13,9 +13,8 @@ define([
 
         events: {
             'click #btn-login-login': 'loginWithGogoCred',
-            'click #id-btn-login-fb': function() { this.loginWithSocial('facebook'); },
-            'click #id-btn-login-gmail': function() { this.loginWithSocial('google-oauth2'); },
-            'click #id-btn-create-account': 'createNewAccount'
+            'click #btn-login-fb': function() { this.loginWithSocial('facebook'); },
+            'click #btn-login-gmail': function() { this.loginWithSocial('google-oauth2'); }
         },
 
         loginWithGogoCred: function() {
