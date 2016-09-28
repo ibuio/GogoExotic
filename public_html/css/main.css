@@ -24,6 +24,10 @@ ul > li {
 .btn-color-name {
   color: white; }
 
+.btn-app-confirm {
+  color: white;
+  background-color: #db5799; }
+
 /** End Common **/
 /** LOGIN PAGE **/
 .mobile-login-input {
